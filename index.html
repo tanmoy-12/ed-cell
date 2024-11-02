@@ -1,327 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Cell Academy Of Technology</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Laila:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-    <title>ED-CELl AOT</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <canvas id="particleCanvas"></canvas>
-    <div class="wrapper">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div class="down" id="scrollDown"><i class="fa-solid fa-angle-down"></i></div>
         <div class="header">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="logo.png" width="150px">
-                </div>
-                <a>ABOUT US</a>
-                <a>OUR SERVICES</a>
-                <a>CONTACT US</a>
-                <a>LOCATION</a>
-                <button class="b1">Login&nbsp;<i class="fa-solid fa-share-from-square"></i></button>
+            <div class="outer">
+                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
             </div>
-        </div>
-        <div class="main">
-            <div class="container1">
-                <div class="c1" id="c1-1">
-                    Hey Folks
+            <div class="inner">
+                <div class="navbar">
+                    <div class="nav-elements">
+                        <div class="logo">
+                            <p>E-Cell AOT</p>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="nav-link" data-target="c1">Home</a></li>
+                            <li><a href="#" class="nav-link" data-target="c3">About</a></li>
+                            <li><a href="#" class="nav-link" data-target="c4">Events</a></li>
+                            <li><a href="#" class="nav-link" data-target="">Team</a></li>
+                            <li><a href="#" class="nav-link" data-target="c5">Gallery</a></li>
+                            <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+                            <li><a><span>Join Us</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="c1" id="c1-2">
-                    Welcome To The
-                </div>
-                <div class="c1" id="c1-3">
-                    <span id="typing-text"></span>
-                </div>
-            </div>
-            <div class="head">
-                <div class="head-pic">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0">
-                </div>
-                <div class="line"></div>
-                <div class="head-quote">
-                    <h2>A note from the ED Cell AOT Head</h2>
+                <div class="c1" id="c1">
+                  <div class="c1-left" data-aos="zoom-in-up">
+                    <span class="heading1">ED-Cell AOT</span>
                     <p>
-                        It is my immense pleasure to extend a warm welcome to you on behalf of the Entrepreneurship Development Cell(AOT). Our chapter serves as a dynamic platform for aspiring engineers to connect, collaborate, and create. At ED Cell, we are committed to nurturing a community of curious minds who are passionate about the ever-evolving field of Entrepreneurship. Through a range of meticulously crafted events, workshops, seminars, and projects, we aim to provide you with opportunities to expand your horizons, exchange ideas, and enhance your technical prowess.
+                        Welcome to the Entrepreneurship Development Cell, where innovation meets opportunity. Our mission is to empower budding entrepreneurs with the skills, resources, and support needed to transform ideas into impactful ventures. Join us at the forefront of entrepreneurial learning and networking.
                     </p>
-                    <h2>--Dr. Sirshendu Saha</h2>
-                </div>
-            </div>
-            <div class="wrapper3">
-                <div class="swiper mySwiper" id="s1">
-                    <h4 style="color: rgb(199, 239, 255);font-size: 500;text-align: center;">Quotes From Our Members</h4>
-                    <div class="cunderline" id="u1"></div>
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"> 
-                        <div class="review" data-swiper-parallax-opacity="0.5" loading="lazy">
-                            <div class="customer-name"  data-swiper-parallax="-100">
-                                <h3>Arpita Das</h3>
-                            </div>
-                            <div class="stars"  data-swiper-parallax="-200">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating"  data-swiper-parallax="-300">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati area. All products quality is so good 👍. Accurate price quick replesmen.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Sabir Hossain</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service, low service charge. on sport repairing. 25 years experience . Reliable laptop service center in 24pgs.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Subhadip Dutta</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;You can be sure to get the best customer service and total satisfaction. After sales service is great as well.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Subhodeep Sadhukhan</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;One of the best 👌shop in the Naihati area. All products quality is so good 👍.  Accurate price quick replesment&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Sonai Ghosh</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Quantum has very good service since 2006, product price is very resealable, over all it has much better then other.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Satish Chandra Bose</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="notstar">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;They are selling computer accessories at reasonable price.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Dipanwita Ghosh</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice service. Very gentle behaviour. Reasonable pricing. Best in Naihati.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Jeet Saha Roy</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Nice store...perfect cost of material.. 100% trustable store...support for customer is very good..&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide"> 
-                        <div class="review">
-                            <div class="customer-name">
-                                <h3>Tapas Chakraborty</h3>
-                            </div>
-                            <div class="stars">
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                                <span class="star">&#9733;</span>
-                            </div>
-                            <div class="customer-rating">
-                                <p><i class="fa-solid fa-quote-left"></i>&nbsp;Good laptop service centre. Prices are very cheap.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                    <a href="#"></a>
+                        <button class="know">Learn More</button>
+                    </a>
+                  </div>
+                  <div class="c1-right" data-aos="zoom-in-up">
+                    <img src="images/animation.gif"></img>
+                  </div>
                 </div>
             </div>
         </div>
-        <div class="latest-events">
-                <div class="events">
-                    <div class="swiper mySwiper" id="s1">
-                        <h4 style="color: rgb(255, 255, 255);font-size: 500;text-align: center;">Latest events</h4>
-                        <div class="cunderline" id="u1"></div>
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"> 
-                            <div class="event" >
-                                <div class="event-image" >
-                                    <img src="https://1.bp.blogspot.com/--aPWEJ3zlEY/XQpgnn95FUI/AAAAAAAAACk/XOBQZTmRBagMRRnAf_WjEx8D8s0vMnWTQCLcBGAs/s1600/Dummy_EVENTS.png" alt="" sr="">
-                                </div>
-                                <div class="circle"></div>
-                                <div class="event-details">
-                                    <h3>Quantum Tech Expo</h3>
-                                    <h4>August 15, 2024</h4>
-                                    <p>The Quantum Tech Expo is the leading event for showcasing cutting-edge advancements in technology, including AI, robotics, and quantum computing. Join us for a day of insightful talks, networking opportunities, and hands-on demonstrations from industry leaders.</p>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide"> 
-                            <div class="event" >
-                                <div class="event-image" >
-                                    <img src="https://1.bp.blogspot.com/--aPWEJ3zlEY/XQpgnn95FUI/AAAAAAAAACk/XOBQZTmRBagMRRnAf_WjEx8D8s0vMnWTQCLcBGAs/s1600/Dummy_EVENTS.png" alt="" sr="">
-                                </div>
-                                <div class="event-details">
-                                    <h3>Quantum Tech Expo</h3>
-                                    <h4>August 15, 2024</h4>
-                                    <p>The Quantum Tech Expo is the leading event for showcasing cutting-edge advancements in technology, including AI, robotics, and quantum computing. Join us for a day of insightful talks, networking opportunities, and hands-on demonstrations from industry leaders.</p>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide"> 
-                            <div class="event" >
-                                <div class="event-image" >
-                                    <img src="https://1.bp.blogspot.com/--aPWEJ3zlEY/XQpgnn95FUI/AAAAAAAAACk/XOBQZTmRBagMRRnAf_WjEx8D8s0vMnWTQCLcBGAs/s1600/Dummy_EVENTS.png" alt="" sr="">
-                                </div>
-                                <div class="event-details">
-                                    <h3>Quantum Tech Expo</h3>
-                                    <h4>August 15, 2024</h4>
-                                    <p>The Quantum Tech Expo is the leading event for showcasing cutting-edge advancements in technology, including AI, robotics, and quantum computing. Join us for a day of insightful talks, networking opportunities, and hands-on demonstrations from industry leaders.</p>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide"> 
-                            <div class="event" >
-                                <div class="event-image" >
-                                    <img src="https://1.bp.blogspot.com/--aPWEJ3zlEY/XQpgnn95FUI/AAAAAAAAACk/XOBQZTmRBagMRRnAf_WjEx8D8s0vMnWTQCLcBGAs/s1600/Dummy_EVENTS.png" alt="" sr="">
-                                </div>
-                                <div class="event-details">
-                                    <h3>Quantum Tech Expo</h3>
-                                    <h4>August 15, 2024</h4>
-                                    <p>The Quantum Tech Expo is the leading event for showcasing cutting-edge advancements in technology, including AI, robotics, and quantum computing. Join us for a day of insightful talks, networking opportunities, and hands-on demonstrations from industry leaders.</p>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    
-                </div>
+        <div class="c2" id="c2">
+            <div class="vision" data-aos="zoom-in">
+                <div class="heading2">Our <span>Vision</span></div>
+                <p>
+                    To be the pioneer in the field of entrepreneurship education and innovation, with a strong focus on empowering young minds to lead successful and fulfilling careers. At the Entrepreneurship Development Cell, we are dedicated to nurturing future leaders. Dive into a community driven by creativity, mentorship, and opportunities designed to bring your entrepreneurial dreams to life
+                </p>
+            </div>
         </div>
-        <div class="footer">
-            <div class="frow">
-                <div class="fcolumn">
-                    <div class="logo">
-                        <img src="logo.png" width="150px">
-                    </div>
-                    <p>An Entrepreneurship Development (ED) Cell is a dedicated initiative within educational institutions to foster entrepreneurial skills and mindset among students.</p>
+        <div class="c3" id="c3">
+            <div class="about" id="about">
+                <div class="about-left" data-aos="fade-right">
+                    <img src="images/i8.jpg" alt="">
+                    <div class="borderdiv"></div>
                 </div>
-                <div class="fcolumn">
-                    <h3>Location <div class="underline"><span></span></div></h3>
-                    <p>Adisaptagram</p>
-                    <p>Hooghly</p>
-                    <p>West Bengal, 700000, India</p>
-                    <p class="email-id"><i class="fa-regular fa-envelope"></i>&nbsp;edcell@aot.edu.in</p>
-                </div>
-                <div class="fcolumn">
-                    <h3>Quick Links <div class="underline"><span></span></div></h3>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About US</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Services</a></li>
-                    </ul>
-                </div>
-                <div class="fcolumn">
-                    <h3>Contact Us <div class="underline"><span></span></div></h3>
-                    <p>+91-9331863389/ 9230558682</p>
-                    <p>+91-9230366322</p>
+                <div class="about-right" data-aos="fade-left">
+                    <div class="heading2">About <span>Us</span></div>
+                    <div class="line"></div>
+                    <p>
+                        We are a community-driven initiative focused on empowering young entrepreneurs to succeed in their careers. Our mission is to provide a safe, supportive, and inclusive environment where they can learn, grow, and achieve their dreams. We are committed to fostering a sense of belonging, empowering individuals, and creating a vibrant, thriving entrepreneurial community.
+                    </p>
                 </div>
             </div>
-            <div class="counter"><h3>Total Number Of Visitors &nbsp; </h3><h3 id="count">0</h3></div>
-            <hr>
-            <p class="copyright">All Rights Reserved ED-Cell AOT &nbsp;<i class="fa-regular fa-copyright"></i>&nbsp; 2024</p>
+        </div>
+        <div class="c4" id="c4">
+          <div class="events">
+            <div class="heading2">Events <span>Calendar</span></div>
+            <div class="event">
+              <figure data-aos="fade-left">
+                <img src="images/event2.jpg" alt="Mountains">
+                <figcaption>
+                  <span>
+                    2nd April, 2024</br>
+                    How to build prize winning Start-Ups<br>
+                  </span>
+                </figcaption>
+              </figure>
+              <figure style="--c:#fff5" data-aos="fade-up">
+                  <img src="images/aecon.jpg" alt="Mountains">
+                  <figcaption>
+                    <span>
+                      14th August, 2024<br> AECon: AOT Entrepreneurship Conclave
+                    </span>
+                  </figcaption>
+              </figure>
+              <figure style="--c:#fff5" data-aos="fade-right">
+                <img src="https://th.bing.com/th/id/OIP.fBAlFBvApMcw5JOAnjzmFwAAAA?rs=1&pid=ImgDetMain" alt="Mountains">
+                <figcaption>
+                  <span>
+                    Coming Soon .....
+                  </span>
+                </figcaption>
+            </figure>
+            </div>
+          </div>
+        </div>
+        <div class="c5" id="c5">
+          <div class="heading3">Gallery</div>
+          <div class="gallery-line"data-aos="zoom-in"></div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/i1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i6.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i7.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i8.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/i9.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="contactUs" id="contact">
+          <div class="contactLeft" data-aos="fade-right">
+            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/78380/paper-airplane-clipart-md.png" alt="">
+          </div>
+          <div class="contactRight" data-aos="fade-left">
+            <div class="contactRightInner">
+              <div class="shape1" id="sh1"></div>
+              <div class="shape1" id="sh2"></div>
+              <div class="shape1" id="sh3"></div>
+            </div>
+            <div class="contactRightOuter">
+              <div class="heading2">Contact <span>Us</span></div>
+              <form class="contactForm">
+                <input class="input-with-icon" type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email" id="">
+                <textarea name="message" placeholder="Message...." id=""></textarea>
+                <button disabled="disabled">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
     </div>
-</div>
-
+    <div class="footer" data-aos="zoom-in-up">
+      <div class="f-outer">
+        <div class="f-inner">
+          <div class="fcolumn">
+            <div class="footer-logo">
+              <p>Entrepreneurship<br>Development Cell</p>
+              <span>Academy Of Technology</span>
+            </div>
+            <div class="newsletter">
+              <p>Subscribe To Our Newsletter</p>
+              <form>
+                <input type="email" placeholder="Enter Your Email">
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="fcolumn">
+            <div class="footer-nav">
+              <ul>
+                <h6>USEFUL LINKS</h6>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="fcolumn">
+            <div class="footer-contact">
+              <h6>CONTACT US</h6>
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp;Academy Of Technology, 2nd Floor, G.T.Road (Adisaptagram), Aedconagar, West Bengal 712121 </p>
+              <p><i class="fa-regular fa-envelope"></i>&nbsp;<a href="mailto:info@academy.com">info@academy.com</a></p>
+            </div>
+            <div class="socials">
+              <h6>FOLLOW US</h6>
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fc">
+        <p>© 2024 Copyright: ED-Cell Academy Of Technology</p>
+      </div>
+    </div>
+    <div class="notAvailable">
+      <p>We are not available on devices having  screen size less than 1248px. Sorry For Inconvinience</p>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: 120, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 1000, // values from 0 to 3000, with step 50ms
+          easing: 'ease', // default easing for AOS animations
+          once: false, // whether animation should happen only once - while scrolling down
+          mirror: false, // whether elements should animate out while scrolling past them
+          anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      })
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const navbarLinks = document.querySelectorAll('.nav-link');
+
+          navbarLinks.forEach(link => {
+              link.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const targetID = this.getAttribute('data-target');
+                  const targetSection = document.getElementById(targetID);
+
+                  if (targetSection) {
+                      window.scrollTo({
+                          top: targetSection.offsetTop - document.querySelector('.navbar').offsetHeight,
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay:{
+          delay : 5000
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const icons = document.querySelectorAll(".icon");
+
+    icons.forEach((icon) => {
+        // Apply different effects to each icon for a varied animation
+        gsap.fromTo(
+            icon,
+            {
+                x: () => Math.random() * 300 - 150,
+                y: () => Math.random() * 300 - 150,
+                opacity: 0,
+                scale: 0,
+            },
+            {
+                opacity: 1,
+                scale: 1.3,
+                rotation: 360,
+                duration: 4,
+                repeat: -1,
+                yoyo: true,
+                ease: "elastic.inOut(1, 0.75)",
+                x: () => Math.random() * 300 - 150,
+                y: () => Math.random() * 300 - 150,
+            }
+        );
+
+        // Add individual bounce effect to each icon
+        gsap.to(icon, {
+            y: "-=20",
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: Math.random(), // Stagger delay for each icon
+        });
+    });
+});
+
+    </script>
+  </body>
 </html>
